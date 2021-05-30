@@ -43,7 +43,7 @@ mkdir $HOME/Android
 
 echo "Creating Symlinks"
 # Create Symlinks To Android Storage.
-ln -s $HOME/storage/dcim $HOME/DCIM
+ln -s $HOME/storage/dcim/* $HOME/DCIM
 ln -s $HOME/storage/shared/* $HOME/Android
 
 echo "Setting Up Vnc Server"
@@ -61,8 +61,8 @@ git clone https://github.com/ayesumit/Walpapers ~/Walpapers
 cp -rf $HOME/Termux-Desk/Dotfiles/themes.tar.gz $HOME/.themes
 tar xf $HOME/.themes/themes.tar.gz
 #Cloning Icons From Source Repos
-cp -rf $HOME/Termux-Desk/Dotfiles/Arc.tar.gz $HOME/.icons
-tar xf $HOME/.icons/Arc.tar.gz
+cp -rf $HOME/Termux-Desk/Dotfiles/icons.tar.gz $HOME/.icons
+tar xf $HOME/.icons/icons.tar.gz
 
 echo "Setting Up Dotfiles..."
 #Setting Up Dotfiles
