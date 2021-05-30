@@ -4,6 +4,8 @@ sleep 2
 echo "Just Sit Back And Relax.."
 sleep 2
 
+chmod +x $HOME/Termux-Desk/*
+
 #installing All Required Materials.
 echo "Installing x11-repo"
 apt update && apt upgrade -y
