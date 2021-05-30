@@ -43,9 +43,9 @@ ln -s $HOME/storage/DCIM $HOME/DCIM
 ln -s $HOME/storage/shared $HOME/Android
 
 echo "Setting Up Vnc Server"
-cp -rf $HOME/REPO/Dotfiles/.vnc $HOME
-cp -rf $HOME/REPO/Dotfiles/startdesk $PREFIX/bin
-cp -rf $HOME/REPO/Dotfiles/stopdesk $PREFIX/bin
+cp -rf $HOME/Termux-Desk/Dotfiles/.vnc $HOME
+cp -rf $HOME/Termux-Desk/Dotfiles/startdesk $PREFIX/bin
+cp -rf $HOME/Termux-Desk/Dotfiles/stopdesk $PREFIX/bin
 
 echo "Setting Up Desktop Environment Configs."
 #Cloning My Walpapers Repository
@@ -55,8 +55,8 @@ git clone theme
 #Cloning Icons From Source Repos
 git clone icon
 #Setting Up Themes, Icons, Walpaper
-cp -rf $HOME/REPO/Dotfiles/.config $HOME
+cp -rf $HOME/Termux-Desk/Dotfiles/.config $HOME
 #Setting Up Dotfiles
-cp -rf $HOME/REPO/Dotfiles/.vimrc $HOME
-cp -rf $HOME/REPO/Dotfiles $HOME
+cp -rf $HOME/Termux-Desk/Dotfiles/.vimrc $HOME
+cp -rf $HOME/Termux-Desk/Dotfiles $HOME
 
