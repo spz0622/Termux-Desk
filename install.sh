@@ -15,7 +15,7 @@ apt install xfce4 xfce4-terminal xfce4-taskmanager xfce4-whiskermenu-plugin xfce
 apt install xfce4*
 
 echo "Installing System Apps"
-apt install xarchiver neofecth htop  leafpad lsd nnn cmatrix -y
+apt install xarchiver neofecth htop leafpad lsd nnn cmatrix -y
 
 echo "Installing Netsurf Browser, But it Doesn't Support Js"
 #apt install netsurf -y
@@ -36,13 +36,13 @@ mkdir $HOME/Desktop
 mkdir $HOME/Downloads
 mkdir $HOME/Walpapers 
 mkdir $HOME/Documents
-mkdir $HOME/Pictures
-mkdir $HOME/Videos
+mkdir $HOME/DCIM
+mkdir $HOME/Android
 
 echo "Creating Symlinks"
 # Create Symlinks To Android Storage.
-ln -s $HOME/storage/DCIM $HOME/DCIM
-ln -s $HOME/storage/shared $HOME/Android
+ln -s $HOME/storage/dcim $HOME/DCIM
+ln -s $HOME/storage/shared/* $HOME/Android
 
 echo "Setting Up Vnc Server"
 cp -rf $HOME/Termux-Desk/Dotfiles/.vnc $HOME
@@ -50,7 +50,6 @@ cp -rf $HOME/Termux-Desk/Dotfiles/startdesk $PREFIX/bin
 cp -rf $HOME/Termux-Desk/Dotfiles/stopdesk $PREFIX/bin
 
 echo "Setting Up Desktop Environment Configs."
-
 #Setting Up Themes, Icons, Walpaper
 mkdir $HOME/.icons
 mkdir $HOME/.themes
@@ -63,6 +62,7 @@ tar xf $HOME/.themes/themes.tar.gz
 cp -rf $HOME/Termux-Desk/Dotfiles/Arc.tar.gz $HOME/.icons
 tar xf $HOME/.icons/Arc.tar.gz
 
+echo "Setting Up Dotfiles..."
 #Setting Up Dotfiles
 cp -rf $HOME/Termux-Desk/Dotfiles/.config $HOME
 cp -rf $HOME/Termux-Desk/Dotfiles/.vimrc $HOME
