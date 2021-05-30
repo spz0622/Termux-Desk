@@ -17,7 +17,7 @@ apt install xfce4 xfce4-terminal xfce4-taskmanager xfce4-whiskermenu-plugin xfce
 apt install xfce4* -y
 
 echo "Installing System Apps"
-apt install xarchiver neofetch htop leafpad lsd nnn cmatrix -y
+apt install xarchiver neofetch htop leafpad lsd nnn bat cmatrix -y
 
 #echo "Installing Netsurf Browser, But it Doesn't Support Js"
 #apt install netsurf -y
@@ -57,22 +57,28 @@ chmod +x $PREFIX/bin/startdesk
 chmod +x $PREFIX/bin/stopdesk
 chmod +x $HOME/.vnc/xstartup
 
+echo "Setting Up Dotfiles..."
+#Setting Up Dotfiles
+cp -rf $HOME/Termux-Desk/Dotfiles/.config $HOME
+cp -rf $HOME/Termux-Desk/Dotfiles/.vimrc $HOME
+cp -rf $HOME/Termux-Desk/Dotfiles $HOME
+
 echo "Setting Up Desktop Environment Configs."
 #Setting Up Themes, Icons, Walpaper
 mkdir $HOME/.icons
 mkdir $HOME/.themes
 #Cloning My Walpapers Repository
 git clone https://github.com/ayesumit/Walpapers ~/Walpapers
+
 #Cloning Themes from Source Repos
 cp -rf $HOME/Termux-Desk/Dotfiles/themes.tar.gz $HOME/.themes
-tar xf $HOME/.themes/themes.tar.gz $HOME/.themes
+cd ~/.themes && tar xf themes.tar.gz
+
 #Cloning Icons From Source Repos
 cp -rf $HOME/Termux-Desk/Dotfiles/icons.tar.gz $HOME/.icons
-tar xf $HOME/.icons/icons.tar.gz $HOME/.icons
+cd ~/.icons && tar xf icons.tar.gz
+cd $HOME
+
+bat $HOME/Termux-Desk/Dotfiles/greet.txt
 
 
-echo "Setting Up Dotfiles..."
-#Setting Up Dotfiles
-cp -rf $HOME/Termux-Desk/Dotfiles/.config $HOME
-cp -rf $HOME/Termux-Desk/Dotfiles/.vimrc $HOME
-cp -rf $HOME/Termux-Desk/Dotfiles $HOME
