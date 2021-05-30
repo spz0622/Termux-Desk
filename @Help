@@ -1,0 +1,15 @@
+@variables
+theme 
+REPO
+icon
+
+@install
+install.sh
+
+@update desk
+update.sh
+
+@termux properties fix
+propedit.sh
+
+
