@@ -14,7 +14,7 @@ apt install git wget curl micro tar zip unzip -y
 echo "Installing Xfce4 And Its Dependencies
 Might Take A While..."
 apt install xfce4 xfce4-terminal xfce4-taskmanager xfce4-whiskermenu-plugin xfce4-clipman-plugin gtk3 gtk2 -y
-apt install xfce4*
+apt install xfce4* -y
 
 echo "Installing System Apps"
 apt install xarchiver neofecth htop leafpad lsd nnn cmatrix -y
