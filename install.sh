@@ -28,6 +28,9 @@ apt install mpv ristretto -y
 echo "Installing Xorg Host, In Case If You Want To Run Linux Apps"
 apt install xorg-xhost -y
 
+echo "Installing Vnc Client.."
+apt install tigervnc -y
+
 echo ".............................."
 echo "Applications Installed !"
 echo ".............................."
