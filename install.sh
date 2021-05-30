@@ -7,13 +7,13 @@ sleep 2
 echo "Installing x11-repo"
 apt update && apt upgrade -y
 apt install x11-repo -y
-apt install git wget curl micro -y
+apt install git wget curl micro tar zip unzip -y
 echo "Installing Xfce4 And Its Dependencies
 Might Take A While..."
 apt install xfce4 xfce4-terminal xfce4-taskmanager xfce4-whiskermenu-plugin xfce4-clipman-plugin gtk3 gtk2 -y 
 
 echo "Installing System Apps"
-apt install xarchiver neofecth htop galculator leafpad feh lsd nnn cmatrix -y
+apt install xarchiver neofecth htop galculator leafpad lsd nnn cmatrix -y
 
 echo "Installing Netsurf Browser, But it Doesn't Support Js"
 apt install netsurf -y
@@ -49,7 +49,7 @@ cp -rf $HOME/Termux-Desk/Dotfiles/stopdesk $PREFIX/bin
 
 echo "Setting Up Desktop Environment Configs."
 #Cloning My Walpapers Repository
-git clone https://github.com/ayesumit/Walpapers* ~/Walpapers
+git clone https://github.com/ayesumit/Walpapers ~/Walpapers
 #Cloning Themes from Source Repos
 git clone theme
 #Cloning Icons From Source Repos
@@ -59,4 +59,3 @@ cp -rf $HOME/Termux-Desk/Dotfiles/.config $HOME
 #Setting Up Dotfiles
 cp -rf $HOME/Termux-Desk/Dotfiles/.vimrc $HOME
 cp -rf $HOME/Termux-Desk/Dotfiles $HOME
-
