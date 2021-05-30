@@ -1,22 +1,24 @@
 echo "Installing Xfce4 In Termux"
 echo "Made By Ayesumit"
 sleep 2
+echo "Just Sit Back And Relax.."
+sleep 2
 
 #installing All Required Materials.
-
 echo "Installing x11-repo"
 apt update && apt upgrade -y
 apt install x11-repo -y
 apt install git wget curl micro tar zip unzip -y
 echo "Installing Xfce4 And Its Dependencies
 Might Take A While..."
-apt install xfce4 xfce4-terminal xfce4-taskmanager xfce4-whiskermenu-plugin xfce4-clipman-plugin gtk3 gtk2 -y 
+apt install xfce4 xfce4-terminal xfce4-taskmanager xfce4-whiskermenu-plugin xfce4-clipman-plugin gtk3 gtk2 -y
+apt install xfce4*
 
 echo "Installing System Apps"
-apt install xarchiver neofecth htop galculator leafpad lsd nnn cmatrix -y
+apt install xarchiver neofecth htop  leafpad lsd nnn cmatrix -y
 
 echo "Installing Netsurf Browser, But it Doesn't Support Js"
-apt install netsurf -y
+#apt install netsurf -y
 
 echo "Installing Media Apps"
 apt install mpv ristretto -y
@@ -48,14 +50,20 @@ cp -rf $HOME/Termux-Desk/Dotfiles/startdesk $PREFIX/bin
 cp -rf $HOME/Termux-Desk/Dotfiles/stopdesk $PREFIX/bin
 
 echo "Setting Up Desktop Environment Configs."
+
+#Setting Up Themes, Icons, Walpaper
+mkdir $HOME/.icons
+mkdir $HOME/.themes
 #Cloning My Walpapers Repository
 git clone https://github.com/ayesumit/Walpapers ~/Walpapers
 #Cloning Themes from Source Repos
-git clone theme
+cp -rf $HOME/Termux-Desk/Dotfiles/themes.tar.gz $HOME/.themes
+tar xf $HOME/.themes/themes.tar.gz
 #Cloning Icons From Source Repos
-git clone icon
-#Setting Up Themes, Icons, Walpaper
-cp -rf $HOME/Termux-Desk/Dotfiles/.config $HOME
+cp -rf $HOME/Termux-Desk/Dotfiles/Arc.tar.gz $HOME/.icons
+tar xf $HOME/.icons/Arc.tar.gz
+
 #Setting Up Dotfiles
+cp -rf $HOME/Termux-Desk/Dotfiles/.config $HOME
 cp -rf $HOME/Termux-Desk/Dotfiles/.vimrc $HOME
 cp -rf $HOME/Termux-Desk/Dotfiles $HOME
