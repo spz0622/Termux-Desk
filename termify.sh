@@ -3,9 +3,9 @@ termux-setup-storage
 apt update && apt upgrade -y
 
 mkdir .termux
-cp -rf $HOME/Termux-Desk/Dotfiles/termux/font.ttf $HOME/.termux
-cp -rf $HOME/Termux-Desk/Dotfiles/termux/colors.properties $HOME/.termux
-cp -rf $HOME/Termux-Desk/Dotfiles/termux/termux.properties $HOME/.termux
+cp $HOME/Termux-Desk/Dotfiles/termux/font.ttf $HOME/.termux
+cp $HOME/Termux-Desk/Dotfiles/termux/colors.properties $HOME/.termux
+cp $HOME/Termux-Desk/Dotfiles/termux/termux.properties $HOME/.termux
 
 echo "
 # Enter Your Username Here
