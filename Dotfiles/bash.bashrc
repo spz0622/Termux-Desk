@@ -9,12 +9,10 @@
 shopt -s histappend
 shopt -s histverify
 export HISTCONTROL=ignoreboth
-export USER=Ayesumit
-export HOSTNAME=Redmi9-Prime
 
 # Default command line prompt.
 PROMPT_DIRTRIM=2
-PS1='Ayesumit\[\e[0;32m\]\w\[\e[0m\] \[\e[0;97m\]\$\[\e[0m\] '
+PS1='\[\e[0;32m\]\w\[\e[0m\] \[\e[0;97m\]\$\[\e[0m\] '
 
 # Handles nonexistent commands.
 # If user has entered command which invokes non-available
@@ -25,7 +23,13 @@ if [ -x /data/data/com.termux/files/usr/libexec/termux/command-not-found ]; then
 	}
 fi
 
-neofetch
+
+# Enter Your Username Here
+# Hostname can Be Your Desk or Device Name..
+
+export USER=Termuser
+export HOSTNAME=Term-Desk
+
 
 echo "How Are You Today, $USER"
 lsd
@@ -40,5 +44,6 @@ alias i="apt install"
 alias rem="apt remove"
 alias sd="/sdcard"
 alias home="$HOME"
-
-./start-ubuntu.sh
+alias used="ncdu"
+alias n="nnn"
+alias append="echo >>"
