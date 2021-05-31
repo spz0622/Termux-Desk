@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-taskmanager" version="1.0">
+  <property name="window-width" type="int" value="481"/>
+  <property name="window-height" type="int" value="434"/>
+  <property name="interface" type="empty">
+    <property name="refresh-rate" type="uint" value="500"/>
+  </property>
+  <property name="prompt-terminate-task" type="bool" value="false"/>
+  <property name="columns" type="empty">
+    <property name="column-rss" type="bool" value="true"/>
+    <property name="column-vsz" type="bool" value="false"/>
+    <property name="column-state" type="bool" value="false"/>
+    <property name="column-cpu" type="bool" value="false"/>
+    <property name="column-priority" type="bool" value="false"/>
+    <property name="column-ppid" type="bool" value="false"/>
+  </property>
+</channel>

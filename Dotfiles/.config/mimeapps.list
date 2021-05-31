@@ -1,0 +1,9 @@
+[Added Associations]
+audio/mpeg=userapp-mpv-I2XN40.desktop;
+inode/symlink=leafpad.desktop;
+image/jpeg=ristretto.desktop;
+
+[Default Applications]
+audio/mpeg=userapp-mpv-I2XN40.desktop
+inode/symlink=leafpad.desktop
+image/jpeg=ristretto.desktop
