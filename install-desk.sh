@@ -80,3 +80,5 @@ cd ~/.icons && tar xf cursor.tar.gz
 bat $HOME/Termux-Desk/Dotfiles/experimental/greet.txt
 cd $HOME
 
+#terminal Fixes and colorizer
+bash termify.sh
