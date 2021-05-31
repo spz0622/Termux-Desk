@@ -31,6 +31,7 @@ alias home="$HOME"
 alias used="ncdu"
 alias n="nnn"
 alias append="echo >>"
+alias play="mpv"
 " >> /data/data/com.termux/files/usr/etc/bash.bashrc
 rm /data/data/com.termux/files/usr/etc/motd
 
