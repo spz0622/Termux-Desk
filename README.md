@@ -45,8 +45,12 @@ And Much More.....😃
 Cool Nahh?
 
 Worth A Follow 😁
-My Social Media 
+
+My Social Media
 📷 Instagram - ayesumit
- 📧 Gmail - darkeyesmit@gmail.com
- 😃 Reddit -
+
+📧 Gmail - darkeyesmit@gmail.com
+
+😃 Reddit - Coming Soon !
+
 🎮 Discord - Coming Soon !
