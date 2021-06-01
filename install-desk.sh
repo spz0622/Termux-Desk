@@ -81,4 +81,4 @@ bat ~/Termux-Desk/Dotfiles/experimental/greet.txt
 cd $HOME
 
 #terminal Fixes and colorizer
-bash termify.sh
+bash ~/Termux-Desk/termify.sh
