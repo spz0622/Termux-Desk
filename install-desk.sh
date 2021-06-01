@@ -77,7 +77,7 @@ cd ~/.icons && tar xf icon.tar.gz
 cp -rf $HOME/Termux-Desk/Dotfiles/themes/cursor.tar.gz $HOME/.icons
 cd ~/.icons && tar xf cursor.tar.gz
 
-bat $HOME/Termux-Desk/Dotfiles/experimental/greet.txt
+bat ~/Termux-Desk/Dotfiles/experimental/greet.txt
 cd $HOME
 
 #terminal Fixes and colorizer

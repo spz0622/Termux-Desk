@@ -54,19 +54,11 @@ set listchars=tab:^\ ,trail:~
 call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
-Plug 'sjl/badwolf'
 Plug 'frazrepo/vim-rainbow'
 Plug 'itchyny/lightline.vim'
 Plug 'preservim/nerdtree'
-Plug 'preservim/nerdcommenter'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
-"Plug 'vim-scripts/taglist.vim'
-Plug 'airblade/vim-gitgutter'
-
-"Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-"Plug 'junegunn/fzf.vim'
-
 call plug#end()
 
 colorscheme gruvbox
