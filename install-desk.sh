@@ -76,6 +76,7 @@ echo "Giving Your Desk A Little EyeCandy And A Pinch Of Vanilla Essence...."
 #configs
 cp -rf ~/Dotfiles/themes/config.tar.gz $HOME
 tar -xf ~/config.tar.gz $HOME
+rm config.tar.gz
 
 #wallpapers
 git clone https://github.com/ayesumit/Walpapers ~/Walpapers
@@ -83,14 +84,17 @@ git clone https://github.com/ayesumit/Walpapers ~/Walpapers
 #themes
 cp -rf ~/Dotfiles/themes/theme.tar.gz $HOME/.themes
 cd ~/.themes && tar xf theme.tar.gz
+rm theme.tar.gz
 
 #icons
 cp -rf ~/Dotfiles/themes/icon.tar.gz $HOME/.icons
 cd ~/.icons && tar xf icon.tar.gz
+rm icon.tar.gz
 
 #fonts
 cp -rf ~/Dotfiles/themes/font.tar.gz  $HOME/.fonts
 cd ~/.fonts && tar xf font.tar.gz
+rm font.tar.gz
 
 #guide
 bat ~/Dotfiles/experimental/greet.txt
