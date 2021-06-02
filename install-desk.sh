@@ -4,6 +4,8 @@ sleep 2
 echo "Just Sit Back And Relax.."
 sleep 4
 
+termux-setup-storage
+
 #installing All Required Materials.
 echo "Installing x11-repo"
 apt update && apt upgrade -y
@@ -45,6 +47,7 @@ mkdir ~/DCIM
 mkdir ~/Android
 mkdir ~/.icons
 mkdir ~/.themes
+mkdir ~/.fonts
 mkdir ~/.vnc
 
 echo "Creating Symlinks"
@@ -52,33 +55,33 @@ echo "Creating Symlinks"
 ln -s $HOME/storage/dcim/* $HOME/DCIM
 ln -s $HOME/storage/shared/* $HOME/Android
 
+echo "Setting Up Dotfiles..."
+cp -rf ~/Termux-Desk/Dotfiles $HOME
+cp -rf ~/Dotfiles/.config $HOME
+cp -rf ~/Dotfiles/.vimrc $HOME
+
 echo "Setting Up Vnc Server"
-cp -rf ~/Termux-Desk/Dotfiles/xstartup $HOME/.vnc
-cp -rf ~/Termux-Desk/Dotfiles/startdesk $PREFIX/bin
-cp -rf ~/Termux-Desk/Dotfiles/stopdesk $PREFIX/bin
+cp -rf ~/Dotfiles/xstartup $HOME/.vnc
+cp -rf ~/Dotfiles/startdesk $PREFIX/bin
+cp -rf ~/Dotfiles/stopdesk $PREFIX/bin
 chmod +x $PREFIX/bin/startdesk
 chmod +x $PREFIX/bin/stopdesk
 chmod +x ~/.vnc/xstartup
 
-echo "Setting Up Dotfiles..."
-cp -rf ~/Termux-Desk/Dotfiles/.config $HOME
-cp -rf ~/Termux-Desk/Dotfiles/.vimrc $HOME
-cp -rf ~/Termux-Desk/Dotfiles $HOME
-
 echo "Setting Up Themes, Icons, Walpaper"
 git clone https://github.com/ayesumit/Walpapers ~/Walpapers
 
-cp -rf ~/Termux-Desk/Dotfiles/themes/theme.tar.gz $HOME/.themes
+cp -rf ~/Dotfiles/themes/theme.tar.gz $HOME/.themes
 cd ~/.themes && tar xf theme.tar.gz
 
-cp -rf ~/Termux-Desk/Dotfiles/themes/icon.tar.gz $HOME/.icons
+cp -rf ~/Dotfiles/themes/icon.tar.gz $HOME/.icons
 cd ~/.icons && tar xf icon.tar.gz
 
-cp -rf ~/Termux-Desk/Dotfiles/themes/fonts.tar.gz  $HOME/.fonts
+cp -rf ~/Dotfiles/themes/fonts.tar.gz  $HOME/.fonts
 cd ~/.fonts && tar xf fonts.tar.gz
 
 
-bat ~/Termux-Desk/Dotfiles/experimental/greet.txt
+bat ~/Dotfiles/experimental/greet.txt
 cd $HOME
 
 #terminal Fixes and colorizer
