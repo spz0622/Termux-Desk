@@ -48,6 +48,7 @@ mkdir ~/Downloads
 mkdir ~/Walpapers 
 mkdir ~/Documents
 mkdir ~/DCIM
+mkdir ~/Music
 mkdir ~/Android
 mkdir ~/.icons
 mkdir ~/.themes
@@ -56,9 +57,10 @@ mkdir ~/.vnc
 
 echo "Creating Symlinks"
 # Create Symlinks To Android Storage.
-rm -rf ~/DCIM/* ~/Android/*
-ln -s ~/storage/dcim/* ~/DCIM
-ln -s ~/storage/shared/* ~/Android
+rm -rf ~/DCIM/* ~/Android/* ~/Music/*
+ln -s ~/storage/dcim ~/DCIM
+ln -s ~/storage/shared ~/Android
+ln -s ~/storage/music ~/Music
 
 echo "Setting Up Dotfiles..."
 cp -rf ~/Termux-Desk/Dotfiles $HOME
