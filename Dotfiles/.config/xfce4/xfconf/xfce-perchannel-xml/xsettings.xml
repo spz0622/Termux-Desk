@@ -2,7 +2,7 @@
 
 <channel name="xsettings" version="1.0">
   <property name="Net" type="empty">
-    <property name="ThemeName" type="string" value="Arc-Darker"/>
+    <property name="ThemeName" type="string" value="Sweet-Dark"/>
     <property name="IconThemeName" type="string" value="Arc"/>
     <property name="DoubleClickTime" type="empty"/>
     <property name="DoubleClickDistance" type="empty"/>
@@ -32,9 +32,9 @@
     <property name="MenuImages" type="empty"/>
     <property name="ButtonImages" type="empty"/>
     <property name="MenuBarAccel" type="empty"/>
-    <property name="CursorThemeName" type="string" value="cz-Hickson"/>
-    <property name="CursorThemeSize" type="empty"/>
-    <property name="DecorationLayout" type="empty"/>
+    <property name="CursorThemeName" type="string" value="Light-Cursor"/>
+    <property name="CursorThemeSize" type="int" value="16"/>
+    <property name="DecorationLayout" type="string" value="close,maximize,minimize:"/>
     <property name="DialogsUseHeader" type="empty"/>
     <property name="TitlebarMiddleClick" type="empty"/>
   </property>

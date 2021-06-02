@@ -17,4 +17,7 @@
   <property name="image" type="empty">
     <property name="limit-quality" type="bool" value="true"/>
   </property>
+  <property name="file" type="empty">
+    <property name="current-uri" type="string" value=""/>
+  </property>
 </channel>

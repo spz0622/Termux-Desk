@@ -74,8 +74,9 @@ cd ~/.themes && tar xf theme.tar.gz
 cp -rf ~/Termux-Desk/Dotfiles/themes/icon.tar.gz $HOME/.icons
 cd ~/.icons && tar xf icon.tar.gz
 
-cp -rf ~/Termux-Desk/Dotfiles/themes/cursor.tar.gz $HOME/.icons
-cd ~/.icons && tar xf cursor.tar.gz
+cp -rf ~/Termux-Desk/Dotfiles/themes/fonts.tar.gz  $HOME/.fonts
+cd ~/.fonts && tar xf fonts.tar.gz
+
 
 bat ~/Termux-Desk/Dotfiles/experimental/greet.txt
 cd $HOME
