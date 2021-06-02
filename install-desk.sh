@@ -5,11 +5,15 @@ echo "Just Sit Back And Relax.."
 sleep 4
 
 termux-setup-storage
+sleep 2
+
+#terminal Fixes and colorizer
+bash ~/Termux-Desk/termify.sh
 
 #installing All Required Materials.
 echo "Installing x11-repo"
-apt update && apt upgrade -y
 apt install x11-repo -y
+apt update && apt upgrade -y
 apt install git wget curl micro tar zip unzip -y
 
 echo "Installing Xfce4 And Its Dependencies
@@ -18,7 +22,7 @@ apt install xfce4 xfce4-terminal xfce4-taskmanager xfce4-whiskermenu-plugin xfce
 apt install xfce4* -y
 
 echo "Installing System Apps"
-apt install xarchiver neofetch htop leafpad lsd nnn bat ncdu cmatrix -y
+apt install xarchiver neofetch htop leafpad lsd nnn bat ncdu cmatrix vim geany -y
 
 echo "Installing Netsurf Browser, But it Doesn't Support Js"
 apt install netsurf -y
@@ -52,13 +56,12 @@ mkdir ~/.vnc
 
 echo "Creating Symlinks"
 # Create Symlinks To Android Storage.
-ln -s $HOME/storage/dcim/* $HOME/DCIM
-ln -s $HOME/storage/shared/* $HOME/Android
+rm -rf ~/DCIM/* ~/Android/*
+ln -s ~/storage/dcim/* ~/DCIM
+ln -s ~/storage/shared/* ~/Android
 
 echo "Setting Up Dotfiles..."
 cp -rf ~/Termux-Desk/Dotfiles $HOME
-cp -rf ~/Dotfiles/.config $HOME
-cp -rf ~/Dotfiles/.vimrc $HOME
 
 echo "Setting Up Vnc Server"
 cp -rf ~/Dotfiles/xstartup $HOME/.vnc
@@ -68,21 +71,28 @@ chmod +x $PREFIX/bin/startdesk
 chmod +x $PREFIX/bin/stopdesk
 chmod +x ~/.vnc/xstartup
 
-echo "Setting Up Themes, Icons, Walpaper"
+echo "Giving Your Desk A Little EyeCandy And A Pinch Of Vanilla Essence...."
+
+#configs
+cp -rf ~/Dotfiles/themes/config.tar.gz $HOME
+tar -xf ~/config.tar.gz $HOME
+
+#wallpapers
 git clone https://github.com/ayesumit/Walpapers ~/Walpapers
 
+#themes
 cp -rf ~/Dotfiles/themes/theme.tar.gz $HOME/.themes
 cd ~/.themes && tar xf theme.tar.gz
 
+#icons
 cp -rf ~/Dotfiles/themes/icon.tar.gz $HOME/.icons
 cd ~/.icons && tar xf icon.tar.gz
 
-cp -rf ~/Dotfiles/themes/fonts.tar.gz  $HOME/.fonts
-cd ~/.fonts && tar xf fonts.tar.gz
+#fonts
+cp -rf ~/Dotfiles/themes/font.tar.gz  $HOME/.fonts
+cd ~/.fonts && tar xf font.tar.gz
 
-
+#guide
 bat ~/Dotfiles/experimental/greet.txt
 cd $HOME
 
-#terminal Fixes and colorizer
-bash ~/Termux-Desk/termify.sh

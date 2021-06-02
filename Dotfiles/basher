@@ -23,3 +23,6 @@ alias used="ncdu"
 alias n="nnn"
 alias append="echo >>"
 alias play="mpv"
+
+# Symlink Fixes
+rm -rf ~/DCIM/* ~/Android/* && ln -s ~/storage/dcim/* ~/DCIM && ln -s ~/storage/shared/* ~/Android
