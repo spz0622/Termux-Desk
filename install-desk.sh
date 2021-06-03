@@ -73,27 +73,22 @@ chmod +x $PREFIX/bin/startdesk
 chmod +x $PREFIX/bin/stopdesk
 chmod +x ~/.vnc/xstartup
 
+clear
+
 echo "Giving Your Desk A Little EyeCandy And A Pinch Of Vanilla Essence...."
-
+sleep 4
 #configs
-cp -rf ~/Dotfiles/themes/config.tar.gz $HOME
-rm -rf ~/.config
-tar xf ~/config.tar.gz
-rm config.tar.gz
-
+cp -rf ~/Dotfiles/themes/.config $HOME
 #wallpapers
 git clone https://github.com/ayesumit/Walpapers ~/Walpapers
-
 #themes
 cp -rf ~/Dotfiles/themes/theme.tar.gz $HOME/.themes
 cd ~/.themes && tar xf theme.tar.gz
 rm theme.tar.gz
-
 #icons
 cp -rf ~/Dotfiles/themes/icon.tar.gz $HOME/.icons
 cd ~/.icons && tar xf icon.tar.gz
 rm icon.tar.gz
-
 #fonts
 cp -rf ~/Dotfiles/themes/font.tar.gz  $HOME/.fonts
 cd ~/.fonts && tar xf font.tar.gz

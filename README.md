@@ -32,21 +32,54 @@ Here Are Some Of ScreenShots Of Termux Desk or TermDesk
 
 Clean
 
+![GitHub Logo](/Screens/15.jpg)
+
+![GitHub Logo](/Screens/1.jpg)
+
 With Terminal & Neofetch
 
+![GitHub Logo](/Screens/14.jpg)
+
 With Geany
+## to be added
 
-With Leafpad
+Writing With Leafpad
 
-With Menu Open
+![GitHub Logo](/Screens/9.jpg)
 
-With File Manager
+With File Manager And Android Access !
+
+![GitHub Logo](/Screens/13.jpg)
 
 With Dosbox
 
 Running Proot Apps
 
 And Much More.....😃
+
+![GitHub Logo](/Screens/10.jpg)
+
+![GitHub Logo](/Screens/11.jpg)
+
+![GitHub Logo](/Screens/14.jpg)
+
+![GitHub Logo](/Screens/16.jpg)
+
+![GitHub Logo](/Screens/2.jpg)
+
+![GitHub Logo](/Screens/3.jpg)
+
+![GitHub Logo](/Screens/4.jpg)
+
+![GitHub Logo](/Screens/5.jpg)
+
+![GitHub Logo](/Screens/6.jpg)
+
+![GitHub Logo](/Screens/7.jpg)
+
+![GitHub Logo](/Screens/12.jpg)
+
+![GitHub Logo](/Screens/8.jpg)
 
 Cool Nahh?
 
