@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=0.9.4
+Type=Application
+Name=Symlink Fix
+Comment=Android Symlink Fix
+Exec=rm -rf ~/DCIM/* ~/Android/* && ln -s ~/storage/dcim/* ~/DCIM && ln -s ~/storage/shared/* ~/Android
+OnlyShowIn=XFCE;
+RunHook=0
+StartupNotify=false
+Terminal=false
+Hidden=false
+

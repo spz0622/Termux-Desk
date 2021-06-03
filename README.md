@@ -1,6 +1,8 @@
 
 # Term-Desk
 
+![GitHub Logo](/Screens/1.jpg)
+
 Welcome,
 To The World Of Termux-Desk or TermDesk.
 Looks Great Nah ?
@@ -21,33 +23,37 @@ So...
 Here We Go.
 Termux Desk or TermDesk
 The Repo Is Easily Understoodable  For 'Noobs' , Every Code Contains Clarity...
-''' Installing Is Simple
+ 
+Installing Is Simple
 Just Copy The Code Bellow And There You Go...
 
-'''
+    pkg install curl && curl https://raw.githubusercontent.com/ayesumit/Termux-Desk/main/Dotfiles/experimental/get-desk.sh | bash
+
+Clone this Repo then run install-desk.sh
+
+    git clone https://github.com/ayesumit/Termux-Desk
+    bash Termux-Desk/install-desk.sh
 
 # Screenshots
 
 Here Are Some Of ScreenShots Of Termux Desk or TermDesk
 
-Clean
+### Clean
 
 ![GitHub Logo](/Screens/15.jpg)
 
-![GitHub Logo](/Screens/1.jpg)
-
-With Terminal & Neofetch
+### With Terminal & Neofetch
 
 ![GitHub Logo](/Screens/14.jpg)
 
-With Geany
-## to be added
+### With Geany
+##### to be added
 
-Writing With Leafpad
+### Writing With Leafpad
 
 ![GitHub Logo](/Screens/9.jpg)
 
-With File Manager And Android Access !
+### With File Manager And Android Access !
 
 ![GitHub Logo](/Screens/13.jpg)
 
@@ -62,8 +68,6 @@ And Much More.....😃
 ![GitHub Logo](/Screens/11.jpg)
 
 ![GitHub Logo](/Screens/14.jpg)
-
-![GitHub Logo](/Screens/16.jpg)
 
 ![GitHub Logo](/Screens/2.jpg)
 
@@ -80,6 +84,10 @@ And Much More.....😃
 ![GitHub Logo](/Screens/12.jpg)
 
 ![GitHub Logo](/Screens/8.jpg)
+
+### Termify
+
+![GitHub Logo](/Screens/16.jpg)
 
 Cool Nahh?
 
