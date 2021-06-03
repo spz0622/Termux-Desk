@@ -32,6 +32,20 @@ Clone this Repo then run install-desk.sh
     git clone https://github.com/ayesumit/Termux-Desk
     bash Termux-Desk/install-desk.sh
 
+### Some Thing About Me Before ScreenShots 😁
+
+Read Me...
+
+I Am a Student in Class 12 And I Gotta Things To Do...
+Some Things Are Still Missing So I Will Fix Later...
+
+Thanks For Installing......
+
+If You Like My Work Then Please Follow my IG..
+
+or If You Want To Contribute...
+You Are Welcome !
+
 # Screenshots
 
 Here Are Some Of ScreenShots Of Termux Desk or TermDesk
