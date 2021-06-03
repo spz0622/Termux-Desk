@@ -5,17 +5,15 @@
 
 Welcome,
 To The World Of Termux-Desk or TermDesk.
+This Is A Beautified Configuration For Xfce4 Desktop On Termux With Usefull Features....
+
 Looks Great Nah ?
 Huh... ?
 
 # Why This ?
-I Have Seen Many Github Repos,
-That Can Install X11 Desktop with Usabli In Termux...
-Containing a Huge Load'a Code
+Desk Set-up For Ease, Beautifull Environment And with Different Features In Termux...
 
-Note- 'Load'a Code' repo Containing Code & Folders in A Spider Web..
-
-Which Is Possibly Impossible to Understand Especially For One Who Is New To This And Just Trying To Make Out Fun With Termux... And Also For Advanced Users  ...🤷‍♀️
+Containing a Huge Load'a Code , Kidding 😁
 
 # Installation
 
